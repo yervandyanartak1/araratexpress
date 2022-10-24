@@ -1,0 +1,21 @@
+
+name: CI / CD test
+on:
+  push:
+    branches: ["master"]
+  workflow_dispatch:
+
+jobs:
+ build:
+  runs-on: ubuntu-latest
+  steps:
+      - uses: actions/checkout@v3
+      - name: Copy project to server
+        uses: appleboy/scp-action@master
+        with:
+          host: ${{ secrets.WEB_HOST }}
+          port: ${{ secrets.WEB_PORT }}
+          username: ${{ secrets.WEB_USER }}
+          key: ${{ secrets.WEB_PRIVATE_KEY }}
+          source: ".env ,.gitignore , debug.log , package-lock.json , package.json , ./public/* , ./src/* , ./test/*"
+          target: "/var/www/araratexpress/"
