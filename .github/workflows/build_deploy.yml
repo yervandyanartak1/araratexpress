@@ -19,7 +19,12 @@ jobs:
           key: ${{ secrets.WEB_PRIVATE_KEY }}
           source: ".env ,.gitignore , debug.log , package-lock.json , package.json , ./public/* , ./src/* , ./test/*"
           target: "/var/www/araratexpress/"
-      - run: npm install -g react-scripts
-      - run: npm start
+  steps:
+      - uses: actions/checkout@v3
+      - name: set node.js 16
+      - uses: actions/setup-node@v1
+        with:
+            version: 16.x
+      - run: npm ci
       - run: npm run build
       - run: npm test
