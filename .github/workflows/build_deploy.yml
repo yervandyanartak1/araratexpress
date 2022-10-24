@@ -18,8 +18,8 @@ jobs:
           username: ${{ secrets.WEB_USER }}
           key: ${{ secrets.WEB_PRIVATE_KEY }}
           source: ".env ,.gitignore , debug.log , package-lock.json , package.json , ./public/* , ./src/* , ./test/*"
-          target: "/var/www/araratexpress/"
-      - run: npm ci      
-           CI: false
+          target: "/var/www/araratexpress/"      
+      - env: 
+          CI: false
       - run: npm run build
      
