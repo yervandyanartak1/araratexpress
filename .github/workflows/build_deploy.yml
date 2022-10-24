@@ -20,7 +20,6 @@ jobs:
           source: ".env ,.gitignore , debug.log , package-lock.json , package.json , ./public/* , ./src/* , ./test/*"
           target: "/var/www/araratexpress/"
       - run: npm ci      
-      - env:
            CI: false
       - run: npm run build
      
