@@ -19,11 +19,6 @@ jobs:
           key: ${{ secrets.WEB_PRIVATE_KEY }}
           source: ".env ,.gitignore , debug.log , package-lock.json , package.json , ./public/* , ./src/* , ./test/*"
           target: "/var/www/araratexpress/"
-      - uses: actions/checkout@v3
-      - name: set node.js 16
-      - uses: actions/setup-node@v3
-        with:
-            version: 16.x
       - run: npm ci
       - run: npm run build
       
