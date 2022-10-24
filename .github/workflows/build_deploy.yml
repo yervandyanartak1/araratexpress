@@ -21,4 +21,5 @@ jobs:
           target: "/var/www/araratexpress/"
       - run: npm ci
       - run: npm run
-      - run: npm run build      
+      - run: npm run build --if-present
+     
