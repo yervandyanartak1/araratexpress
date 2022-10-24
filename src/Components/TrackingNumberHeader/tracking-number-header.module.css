@@ -1,0 +1,23 @@
+.trackingNumberHeader {
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #fff;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  box-shadow: 1px -15px 22px #000000;
+  z-index: 9;
+}
+
+.trackingNumberLangDrop {
+  margin-right: 20px;
+  font-family: "Roboto", sans-serif;
+}
+
+.trackingNumberHeaderLogo {
+  display: block;
+  margin-left: 0;
+}

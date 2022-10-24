@@ -1,0 +1,84 @@
+.heroBaner {
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  width: 100%;
+  background-image: url("/img/bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+  top: 80px;
+}
+.heroBanerContainer {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.heroBanerText {
+  width: 640px;
+  color: #fff;
+  margin-left: 24px;
+}
+
+.heroBanerBtn {
+  margin-left: 24px;
+}
+
+@media screen and (max-width: 640px) {
+  .heroBanerText {
+    width: unset;
+    text-align: center;
+    margin-left: 0;
+  }
+  .heroBanerText h1 {
+    font-size: 40px !important;
+    margin: 24px;
+  }
+  .heroBanerBtn {
+    text-align: center;
+    margin-left: 0;
+  }
+}
+.heroBanerBtn {
+  width: 100%;
+  margin-bottom: 64px;
+}
+
+.heroBanerText h1 {
+  font-size: 60px;
+  line-height: 80px;
+}
+
+.heroBanerBtn a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: #fff;
+  border: 2px solid #fff;
+  margin-right: 32px;
+  padding: 12px 32px;
+  transition: background-color 0.3s, color 0.3s ease;
+}
+
+.heroBanerBtn a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 350px) {
+  .heroBanerBtn a {
+    width: unset;
+    text-align: center;
+    margin-left: 0;
+    flex-direction: column;
+    width: 60%;
+    display: block;
+    margin: 0;
+    margin-left: 32px;
+    margin-top: 24px;
+  }
+}

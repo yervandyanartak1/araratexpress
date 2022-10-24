@@ -1,0 +1,75 @@
+.navbar {
+  display: flex;
+
+  height: 100%;
+  background-color: white;
+  align-items: center;
+}
+
+.navLink {
+  font-size: 16px;
+  font-weight: 500;
+  margin-right: 48px;
+  text-decoration: none;
+  color: black;
+  line-height: 80px;
+}
+.navLink:last-child {
+  margin-right: 24px;
+}
+
+.languageIcon {
+  height: 10px;
+  display: inline-block;
+}
+
+.languageIcon img {
+  height: 10px;
+}
+
+.navLink:hover {
+  color: #ee6b4d;
+}
+
+.nav {
+  height: 100%;
+}
+.item {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.navLinkCalculator {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.trackingBtn {
+  text-decoration: none;
+  color: #000;
+  font-size: 16px;
+  line-height: normal;
+  padding: 8px 12px;
+  border: 2px solid #293241;
+  transition: background-color 0.3s, color 0.3s ease;
+  position: relative;
+  z-index: 10;
+}
+
+.trackingBtn:hover {
+  color: #ffffff;
+  background-color: #293241;
+}
+
+@media screen and (max-width: 900px) {
+  .desktopMenu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .navLinkCalculator {
+    margin-left: 24px;
+  }
+}

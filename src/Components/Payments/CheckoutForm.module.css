@@ -1,0 +1,154 @@
+.modal {
+  position: fixed;
+  margin: auto;
+  top: 32px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 400px;
+  height: 240px;
+  border-radius: 5px;
+  z-index: 9999999999999999;
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999999;
+  background: rgb(0 0 0 / 32%);
+}
+
+.modalActionClose {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0;
+  border: 0;
+  background-color: transparent;
+  margin:5px;
+  position: absolute;
+  right: 0;
+}
+.modalActionClose img {
+  width: 100%;
+}
+.modalHeader {
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  display: flex;
+    justify-content: center;
+  /* display: flex;
+  flex-direction: row;
+  justify-content: flex-end; */
+}
+.modalActions {
+  width: 100%;
+  display: flex;
+
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.modalHeaderTitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #00656d;
+}
+
+.modalActionConfirm {
+  text-decoration: none;
+  outline: none;
+  padding: 8px 12px;
+  color: white;
+  background-color: #27ae60;
+  transition: background-color 0.3s, color 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  border: none;
+  padding: 15px 40px;
+  cursor: pointer;
+  width: 100%;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.modalActionConfirm:hover {
+  background-color: #398240;
+}
+
+.modalBody {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.errorMessage {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #e74c3c;
+}
+
+.stripePayment {
+  width: 100%;
+  padding: 0 20px 0 20px;
+  box-sizing: border-box;
+}
+.productPrice {
+  text-align: center;
+  font-size: 21px;
+  margin-top: 20px;
+  color: #fff;
+  display: inline-block;
+  background-color: #27ae60;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -57px;
+}
+
+.paymentLogoGrid {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.paymentLogo {
+  margin-right: 20px;
+}
+@media screen and (max-width: 500px) {
+  .modal {
+    width: 350px;
+  }
+
+  .paymentLogo {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .modal {
+    width: 270px;
+  }
+
+  .paymentLogo:nth-child(3) {
+    display: none;
+  }
+  .paymentLogo:nth-child(5) {
+    display: none;
+  }
+}

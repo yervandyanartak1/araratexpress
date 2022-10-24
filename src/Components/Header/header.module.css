@@ -1,0 +1,51 @@
+.header {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: white;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0px 0px 4px #0000001c;
+  position: fixed;
+  z-index: 100000;
+}
+
+.headerContainer {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.headerContainer img {
+  height: 24px;
+}
+
+.headerContainer .menuButton {
+  outline: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.headerContainer .menuButton {
+  border: none;
+  background: transparent;
+  outline: 0;
+  cursor: pointer;
+}
+
+.sideBarMenu {
+  display: none;
+}
+@media screen and (max-width: 900px) {
+  .headerContainer {
+    justify-content: space-between;
+  }
+  .sideBarMenu {
+    display: block;
+    margin-left: 24px;
+  }
+}
+
+.openSizeBar {
+  left: 300px;
+}

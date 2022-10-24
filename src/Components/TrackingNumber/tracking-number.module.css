@@ -1,0 +1,19 @@
+.trackingNumber {
+  background-color: #f8f9fe;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   
+}
+
+@media screen and (max-width: 810px) {
+  .dashboardMain {
+    background-color: #f1f3f9;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

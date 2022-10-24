@@ -1,0 +1,49 @@
+.shipingpCostContainer{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  background-color: #e74c3c;
+  justify-content: space-around;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 10px 10px 10px 10px;
+  box-sizing: border-box;
+}
+
+.shippingCostText{
+  color:#ffffff;
+  font-size: 20px;
+}
+
+
+.shippingCostBtn {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: 12px 42px;
+  transition: background-color 0.3s, color 0.3s ease;
+  font-family: "Roboto", sans-serif;
+  
+  height: 48px;
+  color: #000;
+  font-size: 16px;
+  line-height: normal;
+  transition: background-color 0.3s, color 0.3s ease;
+  position: relative;
+  background: #fff;
+
+  border: none;
+  border-radius: 5px;
+  color: #3498db;
+  font-weight: bold;
+}
+
+.shippingCostBtn:hover {
+  color: #2980b9;
+  background-color: #f8f9fe;
+}
