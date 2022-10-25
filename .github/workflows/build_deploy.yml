@@ -19,5 +19,5 @@ jobs:
           key: ${{ secrets.WEB_PRIVATE_KEY }}
           source: ".env ,.gitignore , debug.log , package-lock.json , package.json , ./public/* , ./src/* , ./test/*"
           target: "/var/www/araratexpress/"
-          run:  CI=false npm run build
+          run: npm run build
 
